@@ -1,0 +1,482 @@
+body{
+    margin: 0;
+    font-family: arial;
+}
+.link{
+    padding: 10px;
+    margin: auto;
+    text-decoration: none;
+}
+
+.container{
+    padding: 2.5% 2% 0 2%;
+    background-color: rgb(245, 245, 245);
+    margin: auto;
+    min-height: 100vh;
+    margin-right: 0;
+}
+
+/*intestazione*/
+
+.titolo{
+    font-size: 33pt;
+}
+
+.home{
+    font-size: 45pt;
+}
+
+.description{
+    padding: 15px 0 0 0;
+    font-size: 15pt;
+    text-align: left;
+    display: none;
+    transition: 0.5s;
+}
+
+.intestazione{
+    width: 70%;
+    margin: auto;
+}
+
+.intestazione2{
+    margin-bottom: 4%;
+}
+
+/* visite*/
+.visite{
+    width: 74%;
+    display: flex;
+    padding: 4% 6% 4% 6%;
+	margin: auto;
+}
+
+.visit{
+    width: 15%;
+    border: 2px solid rgb(46, 144, 177);
+    height: 110px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 3%;
+    padding-left: 3%;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow:0 1px 5px rgba(0,0,0,0.5);
+}
+
+.time, .visita, .verde, .rosso{
+    text-align: left;
+    font-size: 16pt;
+}
+
+.verde{
+    color: green;
+    text-align: center;
+}
+
+.rosso{
+    color: red;
+    margin: auto;
+}
+
+.number{
+    font-size: 40pt;
+    font-weight: bolder;
+    color: rgb(46, 144, 177);
+}
+
+/* side navbar style*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(46, 144, 177);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    margin-top: 60px;
+  }
+
+.sidenav a {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: flex;
+    opacity: 1;
+}
+
+.sidenav img{
+    height: 24px;
+    padding: 5px;
+    padding-top: 0;
+}
+
+.sidenav a:hover {
+    background-color: rgb(244, 162, 97);
+    transition: 0.4s ;
+}
+
+.locationTitolo{
+    padding-right: 5px !important;
+    white-space: nowrap;
+}
+
+/*navbar style*/
+
+.navbar{
+    height: 40px;
+    padding: 15px 10px 15px 10px;
+    background-color: rgb(46, 144, 177);
+}
+
+.sideMenuButton{
+    background: none;
+    border: none;
+    font-size: 20pt;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.logoutButton{
+    border: none;
+    background-color: rgb(244, 162, 97);
+    font-size: 16pt;
+    color: #ffffff;
+    float: right;
+    padding: 9px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: bold;
+    box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+
+.esci:hover{
+    background-color: #ffffff;
+    color: rgb(244, 162, 97);
+    transition: .2s;
+}
+
+.imgUser{
+    float: left;
+    padding-right: 8px;
+}
+
+.welcome{
+    align-items: center;
+}
+
+.navbar button:hover, .fil{
+    cursor: pointer;
+}
+
+.navbar .title a{
+    padding: 15px;
+    font-family: arial;
+    font-size: 20pt;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/*grafico generale*/
+
+.grafico{
+	font-family: arial;
+	min-height: 300px;
+	width: 70%;
+	font-family: arial;
+    margin: auto;
+    border: 2px solid #e6e6e6;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+    padding: 1%;
+	border-radius: 8px;
+}
+
+/*filter grafico homepage*/
+
+.filter{
+    width: 70%;
+    margin: auto;
+    display: flex;
+	margin-bottom: 30px;
+}
+
+.titolo2{
+    font-size: 20pt;
+}
+
+.filter input[type="submit"]{
+    padding: 7px 20px 7px 20px;
+    font-weight: bold;
+    background: none;
+    font-size: 15pt;
+    border: none;
+    background-color: rgb(244, 162, 97);
+    color: #ffffff;
+    height: 100%;
+    width: 32%;
+}
+
+.filter select{
+    height: 100%;
+    padding: 8px;
+    font-size: 12pt;
+    border: none;
+    width: 33%;
+}
+
+.form{
+    margin: auto;
+    width: 55%;
+}
+
+.form input:hover{
+	cursor: pointer;
+}
+
+/* footer*/
+
+.footer{
+	text-align: center;
+	font-family:Arial;
+	font-size: 12pt;
+	padding: 0.5%;
+    background-color: rgb(46 144 177);
+    color: #ffffff;
+}
+
+/* tooltip */
+
+.tooltip {
+    display:inline-block;
+    position:relative;
+    text-align:left;
+}
+
+.tooltip .right {
+    width: fit-content;
+    min-width:380px; 
+    top:50%;
+    left:100%;
+    margin-left:20px;
+    transform:translate(0, -50%);
+    padding:10px 20px;
+    color:#444444;
+    background-color:#ffffff;
+    font-weight:normal;
+    font-size:13pt;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    border:1px solid transparent;
+    box-shadow:0 1px 5px rgba(0,0,0,0.5);
+    visibility:hidden;
+    opacity:0;
+    transition:opacity 0.8s;
+}
+
+.tooltip:hover .right {
+    visibility:visible; opacity:1;
+}
+
+.tooltip .right i {
+    position:absolute;
+    top:50%;
+    right:100%;
+    margin-top:-12px;
+    width:12px;
+    height:24px;
+    overflow:hidden;
+}
+
+.tooltip .right i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:0;
+    top:50%;
+    transform:translate(50%,-50%) rotate(-45deg);
+    background-color:#ffffff;
+    border:1px solid transparent;
+    box-shadow:0 1px 5px rgba(0,0,0,0.5);
+}
+
+/* informazioni style */
+
+.info{
+    margin: auto;
+    width: 70%;
+    padding-top: 3%;
+    font-size: 18pt;
+    line-height: 1.6;
+}
+
+.info a{
+    text-decoration: none;
+    color: #0f9bca;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 900px) {
+    html, body {
+        min-height: 100%;
+        min-width: 100%;
+    }
+
+    .container{
+        padding-bottom: 8%;
+    }
+
+    .home{
+        text-align: center;
+        font-size: 32pt;
+    }
+
+    .visit{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5vh;
+        margin: 0;
+        padding: 8%;
+    }
+
+    .visite{
+        display: grid;
+        grid-template-columns: auto auto;
+        max-width: 100vw;
+        column-gap: 10vw;
+        row-gap: 10vw;
+    }
+
+    .time, .visita, .verde, .rosso{
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .number{
+        font-size: 3rem;
+        font-weight: bolder;
+        color: rgb(46, 144, 177);
+    }
+
+    .grafico{
+        margin: 0;
+        width: 100%;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .filtra{
+        width: 32%;
+    }
+
+    .filter{
+        width: 100%;
+    }
+
+    .filter input[type="submit"], .filter select{
+        width: 32%;
+    }
+
+    .sidenav{
+        height: 100vh;
+    }
+
+    .grafico{
+        padding: 0;
+    }
+
+    .tooltip {
+        display:inline-block;
+        position:relative;
+        text-align:left;
+    }
+    
+    .tooltip .right {
+        min-width:200px; 
+        top:40px;
+        left:50%;
+        transform:translate(-80%, 0);
+        padding:10px 20px;
+        color:#444444;
+        background-color:#ffffff;
+        font-weight:normal;
+        font-size:13px;
+        border-radius:8px;
+        position:absolute;
+        z-index:99999999;
+        box-sizing:border-box;
+        box-shadow:0 1px 8px rgba(0,0,0,0.5);
+        visibility:hidden; opacity:0; transition:opacity 0.8s;
+    }
+    
+    .tooltip:hover .right {
+        visibility:visible; opacity:1;
+    }
+    
+    .tooltip .right i {
+        position:absolute;
+        bottom:100%;
+        left:80%;
+        margin-left:-12px;
+        width:24px;
+        height:12px;
+        overflow:hidden;
+    }
+    
+    .tooltip .right i::after {
+        content:'';
+        position:absolute;
+        width:12px;
+        height:12px;
+        left:50%;
+        transform:translate(-50%,50%) rotate(45deg);
+        background-color:#ffffff;
+        box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .number{
+        font-size: 11vmin;
+    }
+
+    .time, .visita, .verde, .rosso{
+        font-size: 5vmin;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .user{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .filtra{
+        width: 32%;
+    }
+
+    .filter{
+        width: 100%;
+    }
+
+    .filter input[type="submit"], .filter select{
+        width: 32%;
+    }
+}
